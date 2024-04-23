@@ -35,5 +35,15 @@ java InMemoryDBTest
 Expected Outputs
 The test cases validate various aspects of the InMemoryDB functionality, such as transaction isolation, commit, and rollback behavior. The expected outputs are described in the comments within the InMemoryDBTest.java file.
 
+
+## Modify for the Future
+To improve this assignment for future use, consider the following suggestions:
+
+Additional Test Cases: Include more complex scenarios, such as nested transactions or simultaneous transactions to test robustness.
+Concurrency Testing: Add test cases that simulate concurrent transactions to verify thread safety.
+Detailed Error Handling: Introduce error cases, such as invalid transaction states or incorrect data types, to ensure the implementation handles them gracefully.
+Performance Metrics: Implement basic performance tests to assess the scalability of the in-memory database with increasing data sizes or transaction counts.
+
+
 Author
 Rudolph Civil
