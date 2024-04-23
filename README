@@ -1,0 +1,39 @@
+# InMemoryDB with Transaction Support
+
+## Project Overview
+This project implements an in-memory key-value database in Java with transaction support. The database supports basic operations such as `put()`, `get()`, `beginTransaction()`, `commit()`, and `rollback()`. Transactions allow multiple operations to be performed atomically, ensuring changes are either committed entirely or rolled back without affecting the main data store.
+
+## Functionality
+- **Keys**: Strings
+- **Values**: Integers
+- **Transactions**: Only one transaction can be active at a time. Changes within a transaction are invisible until committed.
+- **Operations**:
+  - `beginTransaction()`: Starts a new transaction.
+  - `commit()`: Commits the current transaction, applying changes to the main data store.
+  - `rollback()`: Rolls back the current transaction, discarding all changes.
+  - `put(key, value)`: Adds or updates a key-value pair within an active transaction.
+  - `get(key)`: Retrieves the value of a given key from the base data store (excluding transaction data).
+
+## How to Run
+To run the code, you need to have a Java development environment set up. Follow these steps to compile and execute the code:
+
+1. **Clone the Repository**: Clone the code repository to your local machine.
+go to OS system terminal or commandline
+-run this-
+git clone https://github.com/RudolphCivil/datastorage
+
+-Go to directory by running this-
+cd datastore
+
+-compile the code by running this- 
+javac InMemoryDB.java InMemoryDBTest.java
+
+-check the results by running this - 
+java InMemoryDBTest
+
+
+Expected Outputs
+The test cases validate various aspects of the InMemoryDB functionality, such as transaction isolation, commit, and rollback behavior. The expected outputs are described in the comments within the InMemoryDBTest.java file.
+
+Author
+Rudolph Civil
